@@ -27,6 +27,10 @@ class registerPage {
         cy.get('#email_address').type(fakeEmail)
     }
 
+    invalidemail() {
+        cy.get('#email_address').type('jokogmail.com')
+    }
+
     pwd() {
         cy.get('#password').type(password)
     }
